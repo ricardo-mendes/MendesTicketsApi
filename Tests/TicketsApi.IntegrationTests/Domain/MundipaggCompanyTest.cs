@@ -17,10 +17,9 @@ namespace TicketsApi.IntegrationTests.Domain
 {
     public class MundipaggCompanyTest
     {
-        //When_Making_Transaction_With_Token_And_User_Does_Not_Have_A_Credit_Card_Saved_Should_Throw_CreditCardTokenException()
+
         [Fact]
-        //public void It_Should_Make_Transaction_With_Credit_Card()
-        public void It_Should_Make_Transaction_With_Credit_Card()
+        public void When_Making_Transaction_Should_Not_Throw_Exception()
         {
             //Arrange 
             UserCreditCard userCreditCard = new UserCreditCard
@@ -48,7 +47,7 @@ namespace TicketsApi.IntegrationTests.Domain
         }
 
         [Fact]
-        public void It_Should_Make_Transaction_With_Credit_Card_Token()
+        public void When_Making_Transaction_With_Credit_Card_Token_Should_Not_Throw_Exception()
         {
             //Arrange 
             UserCreditCard userCreditCard = new UserCreditCard
